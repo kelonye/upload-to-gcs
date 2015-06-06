@@ -1,0 +1,7 @@
+{
+  "name": "base",
+  "dependencies": {
+    "jade": "0.35.0"
+  },
+  "private": true
+}

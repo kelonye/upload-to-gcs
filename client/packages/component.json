@@ -1,0 +1,24 @@
+{
+  
+  "name": "packages",
+  
+  "dependencies": {
+    "kelonye/ember-upload": "0.0.7",
+    "yields/slug": "1.1.0"
+  },
+
+  "scripts": [
+    "index.js",
+    "templates/index.js",
+    "classes/index.js",
+    "classes/gcs-upload.js"
+  ],
+
+  "styles": [
+  ],
+
+  "jade": [
+    "templates/gcs-upload"
+  ]
+
+}

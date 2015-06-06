@@ -1,0 +1,51 @@
+@import "bootstrap";
+@import "mixins";
+@import "variables";
+
+body {
+  margin: 0;
+  padding-top: 55px;
+}
+
+h1, h2, h3, h4, h5, h6{
+  padding: 0;
+  margin: 0;
+}
+
+#nprogress .bar{
+  z-index: 1000000 !important;
+}
+
+#nprogress .bar {
+  background: @nprogress-color !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px @nprogress-color, 0 0 5px @nprogress-color !important;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: @nprogress-color !important;
+  border-left-color: @nprogress-color !important;
+}
+
+.error{
+  color: red;
+}
+
+.drop,
+.progress{
+  display: inline-block;
+}
+.drop{
+  width: 90%;
+  text-align: center;
+  padding: 42px 0;
+  border: 1px dotted #ddd;
+}
+.drop.over{
+  border: 3px dotted #ddd;
+}
+.progress{
+  float: right;
+}

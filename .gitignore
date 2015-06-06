@@ -1,0 +1,7 @@
+*.pyc
+node_modules
+components
+public
+api-v1.discovery
+api
+api-v1.zip

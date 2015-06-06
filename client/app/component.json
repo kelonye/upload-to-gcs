@@ -1,0 +1,45 @@
+{
+  "name": "app",
+  "dependencies": {
+    "visionmedia/batch": "0.5.1",
+    "moment/moment": "2.9.0",
+    "yields/store": "0.2.0",
+    "kelonye/ember": "1.9.1"
+  },
+  "scripts": [
+
+    "index.js",
+    
+    "views/index.js",
+
+    "controllers/index.js",
+    "controllers/application.js",
+    "controllers/application-index.js",
+
+    "routes/index.js",
+    "routes/application.js",
+    "routes/application-index.js",
+
+    "models/index.js",
+
+    "templates/index.js"
+
+  ],
+  "styles": [
+  ],
+  "images": [
+  ],
+  "jade": [
+    "templates/application",
+    "templates/application-error",
+    "templates/application-index"
+  ],
+  "local": [
+    "global",
+    "partials",
+    "packages"
+  ],
+  "paths": [
+    ".."
+  ]
+}

@@ -1,0 +1,50 @@
+application: afrihunt-kelonye
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+builtins:
+- remote_api: on
+- deferred: on
+
+libraries:
+- name: jinja2
+  version: latest
+- name: django
+  version: latest
+- name: webapp2
+  version: "2.5.2"
+- name: endpoints
+  version: "1.0"
+- name: pycrypto
+  version: latest
+- name: ssl
+  version: latest
+
+inbound_services:
+- channel_presence
+
+skip_files:
+- ^(.*/)?.*\.py[co]
+- ^(.*/)?\..*
+- ^(.*/)?.+yaml$
+- ^(.*/)?.+json$
+- ^(.*/)?.+jade$
+- ^(.*/)?.+less$
+- ^(.*/)?.+Makefile$
+- ^(.*/)?components/.*
+- ^(.*/)?node_modules/.*
+
+handlers:
+
+- url: /favicon.ico
+  static_files: public/app/images/icon.png
+  upload: public/app/images/icon.png
+
+- url: /public
+  static_dir: public/
+
+- url: /.*
+  script: server.views.app
+  secure: always

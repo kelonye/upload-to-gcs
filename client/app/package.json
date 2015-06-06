@@ -1,0 +1,7 @@
+{
+  "name": "base",
+  "dependencies": {
+    "component-hooks": "*"
+  },
+  "private": true
+}

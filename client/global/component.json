@@ -1,0 +1,46 @@
+{
+  "name": "global",
+  "dependencies": {
+  },
+  "scripts": [
+
+    "index.js",
+
+    "vendor/bootstrap/js/tab.js",
+    "vendor/bootstrap/js/collapse.js",
+    "vendor/bootstrap/js/button.js",
+    "vendor/bootstrap/js/alert.js",
+    "vendor/bootstrap/js/dropdown.js",
+    "vendor/bootstrap/js/transition.js",
+    "vendor/bootstrap/js/tooltip.js",
+    "vendor/bootstrap/js/popover.js"
+
+  ],
+  "less": [
+    "styles/style"
+  ],
+  "styles": [
+    "vendor/nprogress.css"
+  ],
+  "images": [
+  ],
+  "files": [
+    "vendor/nprogress.js"
+  ],
+  "fonts": [
+    "vendor/bootstrap/fonts/glyphicons-halflings-regular.svg",
+    "vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf",
+    "vendor/bootstrap/fonts/glyphicons-halflings-regular.eot",
+    "vendor/bootstrap/fonts/glyphicons-halflings-regular.woff",
+    "vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2"
+  ],
+
+  "dump": [
+
+    "vendor/bootstrap/js/modal.js",
+    "vendor/bootstrap/js/carousel.js",
+    "vendor/bootstrap/js/affix.js",
+    "vendor/bootstrap/js/scrollspy.js"
+
+  ]
+}

@@ -1,0 +1,2 @@
+require('./classes');
+require('./templates');

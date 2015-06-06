@@ -1,0 +1,13 @@
+
+.text-center
+
+  | {{view upload.ProgressView}}
+  | {{#view upload.DropView}}
+  | Upload or Drop files here
+  | {{/view}}
+  
+  br
+  
+  | {{#if path}}
+  <img {{bind-attr src=path}}>
+  | {{/if}}

@@ -1,0 +1,12 @@
+{
+  "name": "partials",
+  "dependencies": {
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+  ],
+  "jade": [
+  ]
+}
