@@ -6,6 +6,9 @@ run:
 	@clear
 	@dev_appserver.py . --clear_datastore yes --port 3000 --admin_port 7000 --host 0.0.0.0
 
+deploy:
+	@appcfg.py update -e kelonyemitchel@gmail.com .
+
 clean:
 	@rm -rf public $(shell find . -name "*.pyc")
 

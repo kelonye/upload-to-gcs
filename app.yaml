@@ -1,4 +1,4 @@
-application: afrihunt-kelonye
+application: example
 version: 1
 runtime: python27
 api_version: 1

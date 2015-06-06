@@ -37,27 +37,28 @@ html(
       type='text/css'
       href='/public/app.css'
     )
- 
+
   body
 
-    br
-    br
-    br
-    br
-    br
-    br
-
     .container
-      .row.text-center
-        h3 UPLOAD VIA:
-      br
-      br
-      br
       .row
-        .col-sm-2
         .col-sm-4
-          a.btn.btn-default.btn-lg.btn-block(href='/client') Client
+        .col-sm-4.text-center
+          form(
+            action='{{upload_url}}'
+            method='POST'
+            enctype='multipart/form-data'
+          )
+            div
+              input.from-control(type='file', name='file')
+            br
+            br
+            div
+              button.btn.btn-default.btn-block(type='submit') submit
+
+          | {% if image %}
+          <img src='{{image}}' />
+          | {% endif %}
+            
         .col-sm-4
-          a.btn.btn-default.btn-lg.btn-block(href='/server') Server
-        .col-sm-2
-        .clearfix
+        .cleafix

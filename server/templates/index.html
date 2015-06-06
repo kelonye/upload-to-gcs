@@ -8,29 +8,19 @@
     <title>{{app.title}}</title>
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/public/app.css">
-    <script>
-      CONFIG = {
-        app: {
-          title: '{{app.title}}',
-        },
-        gcs: {
-          bucket: '{{app.gcs.bucket}}'
-        }
-      };
-      
-    </script>
   </head>
-  <body>
-    <script type="text/javascript" src="/public/global/vendor/nprogress.js"></script>
-    <script>
-      NProgress.start();
-      NProgress.set(0.4);
-      
-    </script>
-    <script>
-      NProgress.done();
-      
-    </script>
-    <script src="/public/app.js"></script>
+  <body><br><br><br><br><br><br>
+    <div class="container">
+      <div class="row text-center">
+        <h3>UPLOAD VIA:</h3>
+      </div><br><br><br>
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4"><a href="/client" class="btn btn-default btn-lg btn-block">Client</a></div>
+        <div class="col-sm-4"><a href="/server" class="btn btn-default btn-lg btn-block">Server</a></div>
+        <div class="col-sm-2"></div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
   </body>
 </html>

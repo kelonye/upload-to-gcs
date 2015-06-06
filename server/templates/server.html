@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta name="keywords" content="{{app.keywords}}">
+    <meta name="description" content="{{app.description}}">
+    <title>{{app.title}}</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/public/app.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 text-center">
+          <form action="{{upload_url}}" method="POST" enctype="multipart/form-data">
+            <div>
+              <input type="file" name="file" class="from-control">
+            </div><br><br>
+            <div>
+              <button type="submit" class="btn btn-default btn-block">submit</button>
+            </div>
+          </form>{% if image %}
+          <img src='{{image}}' />
+          {% endif %}
+        </div>
+        <div class="col-sm-4"></div>
+        <div class="cleafix"></div>
+      </div>
+    </div>
+  </body>
+</html>
