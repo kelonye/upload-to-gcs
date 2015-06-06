@@ -29,7 +29,7 @@ gsutil acl set public-read-write gs://[bucket-name]
 gsutil defacl set public-read gs://[bucket-name]
 ```
 
-Install Google Appengine Python SDK.
+Install Node.js and Google Appengine Python SDK.
 
 Run:
 

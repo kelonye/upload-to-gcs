@@ -1,13 +1,23 @@
 
-.text-center
+.row
+  .col-sm-2
+  .col-sm-6
+    | {{#view upload.DropView}}
+    | Upload or Drop files here
+    | {{/view}}
+  .col-sm-2
+    | {{view upload.ProgressView}}
+  .col-sm-2
+  .clearfix
 
-  | {{view upload.ProgressView}}
-  | {{#view upload.DropView}}
-  | Upload or Drop files here
-  | {{/view}}
-  
-  br
-  
-  | {{#if path}}
-  <img {{bind-attr src=path}}>
-  | {{/if}}
+br
+br
+
+.row
+  .col-sm-3
+  .col-sm-6
+    | {{#if path}}
+    <img {{bind-attr src=path}}>
+    | {{/if}}
+  .col-sm-3
+  .clearfix

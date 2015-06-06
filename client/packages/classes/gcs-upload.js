@@ -15,6 +15,7 @@ App.GcsUploadComponent = Em.Component.extend({
   init: function(){
 
     var self = this;
+    var calls = 0;
     var key = slug((new Date).toISOString());
     var opts = {
       'Content-Type': 'image/png',
@@ -25,6 +26,8 @@ App.GcsUploadComponent = Em.Component.extend({
     this.upload = upload(GCS.url, opts);
     this.upload.addObserver('upload.loadend', function(){
       Em.run.later(function(){
+        ++calls;
+        if (2 !== calls) return; // handle weired issue where loadend is emitted twice
         var path = GCS.url + key;
         console.log('GCS path: %s', path);
         self.set('path', path);
