@@ -1,7 +1,5 @@
 
-Enable CORS on bucket:
-
-https://cloud.google.com/storage/docs/cross-origin#Configuring-CORS-on-a-Bucket
+[Enable CORS](https://cloud.google.com/storage/docs/cross-origin#Configuring-CORS-on-a-Bucket) on bucket:
 
 I.E.:
 
